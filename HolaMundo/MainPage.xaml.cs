@@ -13,5 +13,13 @@ namespace HolaMundo
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(Object sender, EventArgs args)
+        {
+            string nombreUsuario = nombreEntry.Text;
+            DisplayAlert("Alerta", $"Hola {nombreUsuario}", "Aceptar");
+        }
+
+
     }
 }
